@@ -1,0 +1,290 @@
+/*Styles of container*/
+#instagram{
+    
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+}
+
+.menu_nav_bar , .post_name_user{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+}
+
+.post_time{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+    color: #929a9c;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+.fa-sharp{
+    margin-right: 0.5em;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pane{
+    margin-right: 1px;
+    margin-left: 1px
+    background-color: white;
+}
+
+
+/* for give a respect order with order to each field of flex */
+.pane_left{
+    background-color: white;
+    order: 1;   
+    width: 17%;
+}
+
+.pane_right{
+    background-color: rgb(255, 255, 255);
+    order: 2;   
+    width: 83%;
+    
+    display: flex;
+    flex-direction: row;
+
+    overflow-y: visible;
+    overflow-x: visible;
+}
+
+
+/*Styles of navBar*/
+.navbar{
+    text-decoration: none;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.pane_left h2{
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+}
+
+.pane_left > dl , h2{
+    margin-left: 1em;
+}
+
+.navbar li{
+    margin: 1.7em 0px;
+}
+
+
+/*Styles of histories*/
+.pane_right_medium{
+    display: flex;
+    flex-direction:column;
+    align-items:self-end;
+    width: 55%;
+    flex-wrap: nowrap;
+}
+
+.pane_histories{
+    background-color: rgb(255, 255, 255);
+    width: inherit;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 2.2em;
+    margin-bottom: 1em;
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+
+}
+
+.circle{
+    width: 4em;
+    height: 4em;
+    border-radius: 2.2em;
+}
+
+.pane_histories > div{
+    margin: 0.5em;
+}
+
+
+.history:hover{
+    background-color: #777;
+}
+
+.pane_post{
+    width: inherit;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pane_post .origin{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: inherit;
+    margin: 2em 0em;
+}
+
+.origin *{
+    margin-right: 0.5em;
+}
+
+.img_profile .circle{
+    width: 3em;
+    height: 3em;
+    border-radius: 1.5em;
+}
+
+.pane_post .options{
+    position: relative;
+    width: inherit;
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: auto auto;
+}
+
+.description{
+    position: relative;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.options #save{
+    text-align: right;
+}
+
+.secc_comment{
+    position: relative;
+    width: inherit;
+}
+
+form{
+    position: relative;
+    width: 99%;
+    border: 0m;
+    margin: 0em;
+}
+
+#form_comment{
+    margin: 0em;
+    padding: 0em;
+    position: relative;
+    width: 100%;
+}
+
+
+.pane_right_right{
+    width: 45%;
+    padding-left: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.account{
+    position: relative;
+    width: inherit;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.account *{
+    margin-top: 0.5em;
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.suggestions{
+    position: relative;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestions .sugg_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.suggestions .sugg_user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0em;
+}
+
+.suggestions .sugg_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.suggestions span , .account span{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;  
+}
+
+.username{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.btn_azul{
+    color: #27c4f5;
+    cursor: pointer;
+}
+
+
